@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Data;
 
 namespace WebApplication1.Models
 {
@@ -14,5 +15,7 @@ namespace WebApplication1.Models
         public string Role { get; set; }
 
         public string Email { get; set; }
+        public string RefreshToken { get; set; }    
+        public DateTime RefreshTokenExpireTime { get; set; }
     }
 }
